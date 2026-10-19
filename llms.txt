@@ -5,7 +5,8 @@
 ## Offer
 - First command (a morning brief from inbox and calendar) within 48 hours; fully set up in 14 days; 60 days of support.
 - Six parts: Practice Brain, three commands, Voice Lock, Guardrails (drafts only), Weekly Review, Handover Kit. Includes Voice Note to Post.
-- Guarantee: if by day 30 it isn't saving at least three hours a week against a baseline of their recurring work written down on the intake call, work continues at no charge until it does.
+- Guarantee 1 (risk of starting): full refund, no reason needed, if the client decides by day 7 that it isn't for them; everything set up is removed.
+- Guarantee 2: if by day 30 it isn't saving at least three hours a week against a baseline of their recurring work written down on the intake call, work continues at no charge until it does.
 - Price: $7,500 USD one time. Two founding places at $3,750 in exchange for a case study. Optional care $1,500/month after day 74. Claude subscription billed separately by Anthropic.
 
 ## Links
