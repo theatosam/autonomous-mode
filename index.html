@@ -7,7 +7,7 @@
 <meta name="description" content="The back office a small firm would have, set up for one consultant: a morning brief, follow-ups, your pipeline, client work and posts. First command in 48 hours, fully set up in 14 days.">
 <link rel="canonical" href="https://autonomous-mode.vercel.app/">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#f2ece1">
+<meta name="theme-color" content="#f0ebdf">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Autonomous Mode">
 <meta property="og:title" content="Run your practice like a firm of five. Alone.">
@@ -17,25 +17,26 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="/assets/fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/spectral-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/geist-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-@font-face { font-family: "Instrument Serif"; src: url("/assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); font-style: normal; font-display: swap; }
-@font-face { font-family: "Instrument Serif"; src: url("/assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); font-style: italic; font-display: swap; }
+@font-face { font-family: "Spectral"; src: url("/assets/fonts/spectral-latin-800-normal.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Spectral"; src: url("/assets/fonts/spectral-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Spectral"; src: url("/assets/fonts/spectral-latin-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
 @font-face { font-family: "Geist"; src: url("/assets/fonts/geist-sans-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
 @font-face { font-family: "Geist"; src: url("/assets/fonts/geist-sans-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
 @font-face { font-family: "Geist"; src: url("/assets/fonts/geist-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
 
 :root {
-  --bg: #f2ece1;
-  --surface: #fbf8f2;
-  --ink: #15120e;
-  --text: #2a251f;
-  --muted: #625b50;
-  --line: rgba(21, 18, 14, 0.14);
-  --accent: #e8501a;       /* large type and shapes only */
-  --accent-text: #b5400f;  /* small text on ivory, AA */
-  --serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --bg: #f0ebdf;
+  --surface: #f7f3ea;
+  --ink: #0d251b;
+  --text: #1f3229;
+  --muted: #55605a;
+  --line: rgba(13, 37, 27, 0.14);
+  --accent: #836220;       /* brass on parchment, any size (4.7:1) */
+  --accent-text: #836220;  /* small text on parchment, AA */
+  --serif: "Spectral", Georgia, serif;
   --sans: "Geist", -apple-system, "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --wrap: 1180px;
@@ -56,11 +57,12 @@ a { color: inherit; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 
 /* type */
-h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
-h1 { font-size: clamp(3rem, 7.4vw, 6.6rem); line-height: 0.95; }
-h2 { font-size: clamp(2.3rem, 4.8vw, 4rem); }
-h3 { font-size: 1.75rem; line-height: 1.1; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 800; color: var(--ink); letter-spacing: -0.02em; line-height: 1; }
+h1 { font-size: clamp(2.6rem, 5.4vw, 4.6rem); line-height: 1; }
+h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+h3 { font-size: 1.5rem; line-height: 1.15; }
 em { font-style: italic; }
+h1 em, h2 em, h3 em { font-weight: 500; }
 h1 em, .close h2 em { color: var(--accent); }
 .eyebrow { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .lede { font-size: clamp(1.1rem, 1.5vw, 1.25rem); color: var(--text); max-width: 34ch; }
@@ -74,7 +76,7 @@ p { max-width: 62ch; }
 
 /* buttons */
 .btn { display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 26px; border-radius: 999px; background: var(--ink); color: var(--bg); font-weight: 500; text-decoration: none; transition: transform 140ms var(--ease), background-color 200ms var(--ease); }
-.btn:hover { background: #2b241c; }
+.btn:hover { background: #1a3127; }
 .btn:active { transform: scale(0.97); }
 .btn svg { transition: transform 200ms var(--ease); }
 .btn:hover svg { transform: translateX(3px); }
@@ -85,9 +87,9 @@ p { max-width: 62ch; }
 .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(32px, 6vw, 88px); align-items: center; padding-block: clamp(32px, 6vw, 72px) clamp(72px, 10vw, 128px); }
 .hero-copy { display: flex; flex-direction: column; gap: 28px; }
 .hero-cta { margin-top: 8px; }
-.film { position: relative; border-radius: 22px; overflow: hidden; background: var(--surface); box-shadow: 0 1px 2px rgba(21,18,14,0.06), 0 30px 70px -20px rgba(64,38,14,0.28); aspect-ratio: 4 / 5; }
+.film { position: relative; border-radius: 22px; overflow: hidden; background: var(--surface); box-shadow: 0 1px 2px rgba(13,37,27,0.06), 0 30px 70px -20px rgba(13,37,27,0.25); aspect-ratio: 4 / 5; }
 .film video { width: 100%; height: 100%; object-fit: cover; }
-.film figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; font-size: 0.8rem; color: var(--muted); background: linear-gradient(rgba(251,248,242,0), rgba(251,248,242,0.92) 40%); }
+.film figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; font-size: 0.8rem; color: var(--muted); background: linear-gradient(rgba(247,243,234,0), rgba(247,243,234,0.92) 40%); }
 
 /* sections */
 section { padding: clamp(72px, 10vw, 128px) 0; border-top: 1px solid var(--line); }
@@ -220,7 +222,7 @@ footer a { color: var(--muted); }
 
 <header class="wrap top">
   <a class="brand" href="/" aria-label="Autonomous Mode, home">
-    <svg width="40" height="22" viewBox="0 0 74 40" aria-hidden="true"><rect width="74" height="40" rx="20" fill="#e8501a"/><circle cx="54" cy="20" r="13" fill="#f2ece1"/></svg>
+    <svg width="40" height="22" viewBox="0 0 74 40" aria-hidden="true"><rect width="74" height="40" rx="20" fill="#0d251b"/><circle cx="54" cy="20" r="13" fill="#cda454"/></svg>
     Autonomous Mode
   </a>
   <nav aria-label="Primary"><a href="https://calendly.com/theatosam/strategy-call" rel="noopener">Book a call</a></nav>
