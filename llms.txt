@@ -1,6 +1,6 @@
 # Autonomous Mode
 
-> A personal AI system for independent consultants (US, UK, Canada; practices of 1-10 people), installed by Ato Sam. It holds the consultant's clients, offers, priorities and voice in one place, runs their recurring work as commands, checks drafts against their voice, and keeps itself current with a weekly review. Built on Claude (Anthropic).
+> The back office a small firm would have, set up for one independent consultant (practices of 1-10 people), installed by Ato Sam. It knows the consultant's clients, offers, priorities and voice, and runs the work around the client work: a morning brief from inbox and calendar, follow-ups, a prospect pipeline, proposals and client updates, and posts from voice notes. Guardrails keep everything in draft until the consultant approves, and a weekly review keeps it current. Built on Claude (Anthropic).
 
 ## Offer
 - First command (a morning brief from inbox and calendar) within 48 hours; fully set up in 14 days; 60 days of support.
