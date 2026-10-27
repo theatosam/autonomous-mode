@@ -1,6 +1,19 @@
 {
   "redirects": [
-    { "source": "/privacy", "destination": "https://theatosam.com/privacy", "permanent": true },
-    { "source": "/:path*", "destination": "https://theatosam.com/autonomous-mode/:path*", "permanent": true }
+    {
+      "source": "/",
+      "destination": "https://theatosam.com/autonomous-mode",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "https://theatosam.com/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://theatosam.com/autonomous-mode/:path*",
+      "permanent": true
+    }
   ]
 }
